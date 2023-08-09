@@ -1,0 +1,90 @@
+body {
+  margin: 0rem;
+  display: grid;
+  place-items: center;
+}
+
+/* Start of header */
+header {
+  background-color: #8860d0;
+  height: 6rem;
+  width: 100%;
+  position: absolute;
+  top: -2rem;
+  display: inline-block;
+}
+
+#img-logo {
+  height: 8rem;
+  width: 20rem;
+}
+
+button {
+  background-color: #0000;
+  color: white;
+}
+
+/* End of header */
+
+/* Start of navbar */
+#nav {
+  position: fixed;
+  top: 4rem;
+  width: 100%;
+  height: 3.5rem;
+  background-color: #5680e9;
+}
+
+ul > li {
+  list-style: none;
+  display: inline-block;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.nav-text {
+  text-decoration: none;
+  color: #ffff;
+  font-size: large;
+}
+
+ul > li:hover {
+  border-bottom: #84ceeb 0.5rem solid;
+  border-radius: 2rem;
+  height: 100%;
+}
+
+/* End of navbar */
+
+/* Start of home */
+.home-img {
+  background-image: url(./images/Wave_Logo.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  top: 11rem;
+  width: 75rem;
+  height: 30rem;
+  border-radius: 28% 68% 65% 25% / 25% 25% 65% 65%;
+  border: 0.5rem solid #84ceeb;
+  box-shadow: 2rem 3rem #c1c8e4;
+  animation: border-radius 5s linear infinite;
+}
+
+@keyframes border-radius {
+  0% {
+    border-radius: 28% 68% 65% 25% / 25% 25% 65% 65%;
+  }
+
+  25% {
+    border-radius: 53% 37% 70% 20% / 73% 40% 50% 20%;
+  }
+
+  50% {
+    border-radius: 45% 45% 30% 64% / 50% 25% 70% 40%;
+  }
+
+  75% {
+    border-radius: 30% 65% 55% 40% / 60% 65% 30% 35%;
+  }
+}
